@@ -380,21 +380,31 @@
         <a href="mailto:cs22b1023@iiitr.ac.in">cs22b1023@iiitr.ac.in</a><br>
         <a href="mailto:debojyoti.roy25-07@iimv.ac.in">debojyoti.roy25-07@iimv.ac.in</a>
       </p>
- </p>
       <h3>Downloads</h3>
       <a href="assets/cv.pdf" download class="download-link">Resume</a>
     </div>
     <div class="contact-right">
-      <form class="contact-form" action="#" method="post">
+      <form class="contact-form" action="https://formsubmit.co/cs22b1023@iiitr.ac.in" method="POST">
         <input type="text" name="name" placeholder="YOUR NAME" required />
         <input type="email" name="email" placeholder="YOUR EMAIL" required />
         <input type="text" name="subject" placeholder="SUBJECT" required />
         <textarea name="message" placeholder="MESSAGE" rows="6" required></textarea>
+
+        <!-- Honeypot to prevent spam bots -->
+        <input type="text" name="_honey" style="display:none">
+
+        <!-- Disable CAPTCHA -->
+        <input type="hidden" name="_captcha" value="false">
+
+        <!-- Redirect to your site after form submission -->
+        <input type="hidden" name="_next" value="https://DebojyotiRoy55.github.io/#contact">
+
         <button type="submit">SEND MESSAGE</button>
       </form>
     </div>
   </div>
 </section>
+
 
 
   <footer class="footer">
