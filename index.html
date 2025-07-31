@@ -521,7 +521,7 @@ window.addEventListener("resize", () => {
   const message = document.getElementById("formMessage");
 
   form.addEventListener("submit", function (e) {
-    e.preventDefault(); // Prevent page reload
+    e.preventDefault(); // prevent default reload
     const formData = new FormData(form);
 
     fetch("https://formsubmit.co/cs22b1023@iiitr.ac.in", {
@@ -530,8 +530,8 @@ window.addEventListener("resize", () => {
     })
     .then(response => {
       if (response.ok) {
-        form.reset(); // Clear form fields
-        message.style.display = "block"; // Show confirmation
+        form.reset(); // clear form
+        message.style.display = "block"; // show confirmation
       } else {
         alert("Something went wrong. Please try again.");
       }
@@ -541,6 +541,7 @@ window.addEventListener("resize", () => {
     });
   });
 </script>
+
 
 
 
